@@ -7,9 +7,27 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <h1>My cat is so Angry</h1>
-  <img src="https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg" alt="Angry Cat" />
-  <button id="btn">Get your beatiful cat</button>
+  <h1 style="text-align: center;margin-top: 20px; color: white;">Angry Cat Generator</h1>
+  <div class="cat-generator">
+    <label for="breed-select">Select a breed:</label>
+    <select id="breed-select">
+        <option value="">Random Cat</option>
+        <option value="abys">Abyssinian</option>
+        <option value="beng">Bengal</option>
+        <option value="sian">Siamese</option>
+        <option value="sphy">Sphynx</option>
+    </select>
+    <button id="btn">Get cat</button>
+  <div id="error-message" style="color:red; margin: 10px 0; display: none;"></div>
+ <div class="image-container" style="margin-top: 15px;">
+    <img id="cat-image" src="" alt="" width="400" style="display: none; border-radius: 8px;"/>
+ </div>
+ <div id="cat-info" style="margin-top: 15px; max-width: 400px; display: none;margin-left: 480px;">
+        <h3 id="breed-name" style="margin: 5px 0;"></h3>
+        <p id="breed-temperament" style="font-style: italic; color: #555; margin: 5px 0;"></p>
+        <p id="breed-description" style="color: #333; line-height: 1.4;"></p>
+    </div>
+</div>
   <script src="./script.js"></script>
 </body>
 </html>
